@@ -319,8 +319,7 @@ export default {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
-        },
-      ).then((res) => {
+        }).then((res) => {
         const call_response = res.data;
         if (call_response.Success) {
           this.getUsers();
@@ -430,7 +429,7 @@ export default {
       const path = http.concat(url, portpage);
       axios.post(path, payload)
         .then((res) => {
-          const call_response = res.data
+          const call_response = res.data;
           if (call_response.Success) {
             this.getUsers();
             this.message = 'User updated!';
@@ -478,7 +477,7 @@ export default {
   },
   computed: {
     filteredRows() {
-      return this.users.filter(user => {
+      return this.users.filter((user) => {
         const name = user.Name.toLowerCase();
         const rfid = user.RFID.toString().toLowerCase();
         const barcode = user.Barcode.toString().toLowerCase();

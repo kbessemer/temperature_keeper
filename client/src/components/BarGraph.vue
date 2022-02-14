@@ -10,7 +10,7 @@ import VueApexCharts from 'vue-apexcharts';
 export default {
   name: 'BarGraph',
   props: ['bargraphseries'],
-  data: function () {
+  data() {
     return {
       options: {
         chart: {
@@ -69,15 +69,14 @@ export default {
             function ({ value }) {
               if (value < 100.4) {
                 return '#12DF44';
-              } else {
-                return '#EA0C0C';
               }
+              return '#EA0C0C';
             },
           ],
         },
         tooltip: {
           y: {
-            formatter: function (val) {
+            formatter(val) {
               return val;
             },
           },

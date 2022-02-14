@@ -248,9 +248,9 @@
 </template>
 
 <script>
-import router from '../router';
 import axios from 'axios';
 import BarGraph from '@/components/BarGraph.vue';
+import router from '../router';
 
 export default {
   name: 'Profile',
@@ -331,10 +331,10 @@ export default {
             {
               name: 'Temperature',
               data: [this.bargraphdata[13], this.bargraphdata[12], this.bargraphdata[11],
-              this.bargraphdata[10], this.bargraphdata[9], this.bargraphdata[8],
-              this.bargraphdata[7], this.bargraphdata[6], this.bargraphdata[5],
-              this.bargraphdata[4], this.bargraphdata[3], this.bargraphdata[2],
-              this.bargraphdata[1], this.bargraphdata[0]],
+                this.bargraphdata[10], this.bargraphdata[9], this.bargraphdata[8],
+                this.bargraphdata[7], this.bargraphdata[6], this.bargraphdata[5],
+                this.bargraphdata[4], this.bargraphdata[3], this.bargraphdata[2],
+                this.bargraphdata[1], this.bargraphdata[0]],
             },
           ];
         })
@@ -508,7 +508,7 @@ export default {
   },
   computed: {
     filteredRows() {
-      return this.user.All_Temperatures.filter(temp => {
+      return this.user.All_Temperatures.filter((temp) => {
         const datetime = temp.DateTime.toString().toLowerCase();
         const temperature = temp.Temperature.toString().toLowerCase();
         const searchTerm = this.filter.toLowerCase();
