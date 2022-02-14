@@ -18,12 +18,12 @@ The frontend runs off the same Flask server as the API, so you only need to star
 
 ## Install Dependencies
 
-*Change to api directory*
+*Change to api directory*<br>
 *Run command: pip3 install -r requirements.txt*
 
 ## Run Application
 
-*Change to api directory*
+*Change to api directory*<br>
 *Run command: python3 app.py*
 
 The application will run on port 5000, to access the app open your web browser and navigate to: http://localhost:5000
