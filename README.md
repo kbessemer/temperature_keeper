@@ -26,4 +26,8 @@ The frontend runs off the same Flask server as the API, so you only need to star
 *Change to api directory*
 *Run command: python3 app.py*
 
+The application will run on port 5000, to access the app open your web browser and navigate to: http://localhost:5000
+
+Changing the port that the Flask app runs on from 5000 may break functionality, you will need to update the frontend stored in the client directory and then rebuild the vuejs app. Move the build files to api/static
+
 There is no login required for this application, I do not recommend running this on the internet because anyone could access it and modify the data.
