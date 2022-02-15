@@ -16,6 +16,8 @@ The backend is built using Python and the Flask library to create an API, the da
 
 The frontend runs off the same Flask server as the API, so you only need to start one program to launch the entire application. The frontend was built using Vuejs.
 
+This app was built to work in the measurement of fahrenheit, fever indications will be based off that.
+
 ## Install Dependencies
 
 *Change to api directory*<br>
@@ -31,3 +33,7 @@ The application will run on port 5000, to access the app open your web browser a
 Changing the port that the Flask app runs on from 5000 may break functionality, you will need to update the frontend stored in the client directory and then rebuild the vuejs app. Move the build files to api/static
 
 There is no login required for this application, I do not recommend running this on the internet because anyone could access it and modify the data.
+
+## Disclaimer
+
+This app is meant for educational purposes only, it is not intended to be used to keep track of medical data.
